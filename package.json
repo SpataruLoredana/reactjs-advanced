@@ -29,6 +29,9 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "webpack": "^4.25.1"
   }
 }
