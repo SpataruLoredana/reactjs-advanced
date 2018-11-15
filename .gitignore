@@ -2,3 +2,4 @@ node_modules
 workSteps.txt
 public/
 coverage/
+build/
