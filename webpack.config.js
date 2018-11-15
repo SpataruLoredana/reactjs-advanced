@@ -26,9 +26,16 @@ module.exports = {
     filename: '[name].js'
   },
   module: {
-    rules: [
-      { test: /\.js$/, exclude: /node_modules/, use: 'babel-loader' }
-    ]
+    rules: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['react', 'env', 'stage-2']
+        }
+      }
+    }]
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
